@@ -7,7 +7,10 @@
 :HL["https://cdn.simpleicons.org/python","image"]
 :HL["https://cdn.simpleicons.org/javascript","image"]
 :HL["https://cdn.simpleicons.org/github","image"]
-:HL["https://cdn.simpleicons.org/css3","image"]
+:HL["https://cdn.simpleicons.org/kuaishou","image"]
 :HL["https://cdn.simpleicons.org/nodedotjs","image"]
 :HL["https://cdn.simpleicons.org/framer","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"Wg6Usm3kM8Uj65Vx5vNBU"}
+:HL["https://cdn.simpleicons.org/phpstorm","image"]
+:HL["https://cdn.simpleicons.org/rive","image"]
+:HL["https://cdn.simpleicons.org/coda","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"mWN3ejfg0nI2hDrI5WWJl"}
