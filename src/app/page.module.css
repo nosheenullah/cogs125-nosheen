@@ -140,3 +140,95 @@ a.secondary {
     --button-secondary-border: #1a1a1a;
   }
 }
+
+/* ── Tech Stack Section ── */
+.techSection {
+  width: 100%;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.techTitle {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.marqueeWrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 12px;
+  /* fade edges */
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+}
+
+/* Keyframes */
+@keyframes marqueeLeft {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+.scrollLeft {
+  animation: marqueeLeft 18s linear infinite;
+}
+
+.scrollRight {
+  animation: marqueeRight 18s linear infinite;
+}
+
+/* Pause on hover */
+.marqueeWrapper:hover .marqueeTrack {
+  animation-play-state: paused;
+}
+
+.techChip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 1px solid var(--button-secondary-border);
+  background: var(--foreground);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  cursor: default;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.techChip:hover {
+  border-color: #ccc;
+  transform: scale(1.04);
+}
+
+.techEmoji {
+  font-size: 16px;
+}
